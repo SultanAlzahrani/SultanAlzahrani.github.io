@@ -1,0 +1,43 @@
+.players-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10%;
+
+  font-size: 3rem;
+}
+.players-info div {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+  height: 80%;
+
+  border-radius: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.playerA {
+  background-color: #6744e6a6;
+}
+.playerB {
+  background-color: rgba(153, 205, 50, 0.4);
+}
+
+.playerA-turn,
+.playerB-turn {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.playerA-turn {
+  background-color: #6844e6;
+}
+
+.playerB-turn {
+  background-color: rgba(153, 205, 50, 1);
+}
