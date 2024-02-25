@@ -10,7 +10,7 @@ showJeddah();
 async function getWeatherData(city) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=4&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=4&aqi=no&alerts=no`,
       {
         mode: "cors",
       }
