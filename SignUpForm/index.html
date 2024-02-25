@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neom - Sign-Up</title>
+    <!-- Icon -->
+    <link rel="icon" href="assets/neom-logo-cut.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="assets/neom-logo-full.png" alt="Neom Logo" class="header-logo" />
+    <div class="form-title-container">
+      <span class="form-title">Can't Wait For You To Jump in!</span>
+    </div>
+    <!--  -->
+    <!-- Form Start -->
+    <!--  -->
+
+    <form class="form">
+      <label class="form-element-label" for="email-input">
+        <span class="element-title">Email</span>
+        <input
+          type="text"
+          class="element-input"
+          id="email-input"
+          maxlength="50"
+          placeholder="Ex -> neom@something.com"
+        />
+        <span class="error" id="email-error"></span>
+      </label>
+      <label class="form-element-label" for="password-input">
+        <span class="element-title">Password</span>
+        <input
+          type="password"
+          class="element-input"
+          id="password-input"
+          maxlength="50"
+          placeholder="Password here"
+        />
+        <span class="error" id="password-error"></span>
+      </label>
+      <label class="form-element-label" for="confirm-password-input">
+        <span class="element-title">Confirm Password</span>
+        <input
+          type="password"
+          class="element-input"
+          id="confirm-password-input"
+          maxlength="50"
+          placeholder="Re-enter Password here"
+        />
+        <span class="error" id="confirm-password-error"></span>
+      </label>
+
+      <div class="country-info-container">
+        <label class="form-element-label" for="country-input">
+          <span class="element-title">Country</span>
+          <select class="element-input" id="country-input">
+            <option value="" disabled selected>Select your country</option>
+            <option value="USA">United States</option>
+            <option value="CAN">Canada</option>
+            <option value="GBR">United Kingdom</option>
+            <option value="AUS">Australia</option>
+            <!-- Add more countries as needed -->
+          </select>
+          <span class="" id="country-error"></span>
+        </label>
+
+        <label class="form-element-label" for="zipcode-input">
+          <span class="element-title">Zipcode</span>
+          <input
+            type="number"
+            class="element-input"
+            id="zipcode-input"
+            maxlength="50"
+            placeholder="Re-enter Password here"
+          />
+          <span class="error" id="zipcode-error"></span>
+        </label>
+      </div>
+
+      <button class="submit-button" id="submit-button">Submit</button>
+    </form>
+
+    <script src="validate.js"></script>
+  </body>
+</html>
