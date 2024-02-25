@@ -1,0 +1,117 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  background-image: url("../assets/background-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.main p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Skills */
+
+.skills-section {
+  gap: 15px;
+  align-items: center;
+  /* background: linear-gradient(to bottom, #040d12, #061716); */
+  /* background-color: #0c1e1e; */
+  background: linear-gradient(black 0%, rgb(7, 18, 18) 100%);
+
+  border-bottom: solid 10px rgba(255, 255, 255, 0.134);
+
+  padding-bottom: 50px;
+}
+
+.tools-container {
+  gap: 5px;
+}
+.tools-container img {
+  width: 60px;
+}
+
+/* Projects */
+.projects-section {
+  /* background-color: rgb(18, 46, 46); */
+  background: linear-gradient(black 0%, rgb(7, 18, 18) 100%);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  max-width: 75%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  gap: 30px;
+  /* background-color: rgba(0, 0, 0, 0.507); */
+  background-color: rgba(18, 46, 46, 0.689);
+}
+
+.project img {
+  max-width: 30%;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.project-details {
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 2rem;
+}
+.project-description {
+  font-size: 1.5rem;
+  background-color: rgba(20, 46, 33, 0.507);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* hobbies-section */
+
+.hobbies-section {
+  background-color: black;
+  padding-bottom: 50px;
+
+  background: linear-gradient(black 0%, rgb(7, 18, 18) 100%);
+}
+
+/* Footer/ Contact Me */
+.footer {
+  background-color: black;
+  padding: 10rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials-container {
+  gap: 1rem;
+}
+
+.socials-container a {
+  text-decoration: none;
+}
+.socials-container a i {
+  font-size: 3.5rem;
+  border-radius: 60%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.socials-container a i:hover {
+  background-color: #b4a686;
+}
