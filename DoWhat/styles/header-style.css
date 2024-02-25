@@ -1,0 +1,40 @@
+.header-section {
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--background-color-1);
+}
+
+.header-section div {
+  display: flex;
+}
+
+.header-section span {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.title-1 {
+  color: var(--title-1);
+}
+.title-2 {
+  color: var(--title-2);
+}
+.ham-menu {
+  width: 35px;
+  padding: 10px;
+
+  border-radius: 10px;
+  margin-left: 1.5vw;
+
+  background-color: rgb(175, 241, 162);
+}
+
+.mode-toggle {
+  width: 35px;
+  padding: 10px;
+
+  border-radius: 10px;
+  margin-right: 1.5vw;
+
+  background-color: rgb(175, 241, 162);
+}
