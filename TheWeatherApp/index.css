@@ -1,0 +1,282 @@
+:root {
+  --cel-margin1: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  display: flex;
+
+  background-image: url(assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+body > .right-side.hidden {
+  display: none;
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --FORM-- animation: fadeIn2 1.1s; */
+
+.left-side {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.form {
+  position: absolute;
+  left: 5%;
+  bottom: 60%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+
+  animation: fadeIn2 1.2s;
+}
+
+.form-title {
+  font-size: 3rem;
+}
+
+.search-box {
+  background: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.search-box:focus {
+  outline: none;
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+  font-size: 1.3rem;
+  background-color: rgba(255, 0, 0, 0.758);
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+/* Right Side~~ */
+
+.right-side {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+
+  align-items: center;
+  justify-content: center;
+
+  animation: fadeIn2 1.2s;
+}
+
+.current-day {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background-color: rgba(1, 1, 41, 0.6);
+
+  border-radius: 2rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.current-day-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-day-info span {
+  font-size: 3rem;
+}
+.current-day-info p {
+  font-size: 4rem;
+  height: fit-content;
+}
+
+/*  */
+
+.current-forecast {
+  display: flex;
+  gap: 1vw;
+}
+
+.degree {
+  display: flex;
+  font-size: 7rem;
+}
+.cel-container {
+  position: relative;
+  margin-right: 20px;
+}
+.cel-icon {
+  position: absolute;
+  top: 2.2rem;
+  width: 20px;
+}
+
+.feels-like {
+  position: relative;
+}
+
+.current-forecast-details {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.current-forecast-details span {
+  padding: 5px 0px 0px 15px;
+  font-size: 1.7rem;
+}
+
+/* Rest Of the Days */
+
+.rest-days {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* display: flex; */
+  gap: 2vw;
+}
+
+.day-element {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 2rem;
+  background-color: rgba(1, 1, 41, 0.7);
+  border-radius: 1rem;
+}
+
+.day-element-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-element-header span {
+  font-size: 2.2rem;
+}
+.day-element-header img {
+  width: 30px;
+  object-fit: contain;
+}
+
+.day-element-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-element-details span {
+  font-size: 1.7rem;
+  padding: 5px;
+}
+
+.other-degree {
+  position: relative;
+}
+
+/*  */
+@media (max-width: 1299px) {
+  body {
+    flex-direction: column;
+  }
+
+  html,
+  body {
+    font-size: 14px;
+  }
+  .left-side {
+    flex: 0.4;
+    margin-top: 1vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-side {
+    justify-content: flex-start;
+  }
+  .form {
+    position: static;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 1030px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .current-day {
+    width: 70%;
+  }
+  .current-forecast {
+    justify-content: center;
+  }
+
+  .degree {
+    font-size: 9rem;
+  }
+
+  .rest-days {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+  }
+
+  .rest-days .day-element:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+}
+
+.hidden {
+  display: none;
+}
