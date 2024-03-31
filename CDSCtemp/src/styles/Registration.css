@@ -1,0 +1,90 @@
+.registration-page {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10vh;
+  align-items: center;
+  background-color: white;
+
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+/* 
+    -
+    - Header (title & stuff)
+    -
+*/
+.section-header {
+  display: flex;
+  width: 85%;
+}
+.section-title {
+  font-size: 4rem;
+  border-bottom: solid 3px #4da743;
+  border-radius: 10px;
+}
+
+/* 
+    -
+    - List of Terms 
+    -
+*/
+
+/* Big parent */
+.terms-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  background-color: #c8e4d4;
+}
+.terms-msg {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.terms-list {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-counter; /* Reset counter */
+}
+
+.terms-list {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+.terms-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  counter-increment: list-counter;
+}
+
+/* Style for numbering */
+.terms-list li::before {
+  content: counter(list-counter) ") ";
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* 
+    -
+    - Button & its container 
+    -
+*/
+
+.button-container {
+}
+.register-btn {
+  font-size: 2.2rem;
+  padding: 1rem 6rem;
+
+  border-radius: 1.5rem;
+
+  background-color: #4da743;
+  color: white;
+}

@@ -1,0 +1,20 @@
+.navbar-brand{
+    padding-left: 1%;
+}
+
+.me-auto{
+    margin:0;
+    padding:0;
+}
+.navbar-home,.navbar-link{
+    padding-left: 20%;
+}
+
+.logo-name{
+    display: flex;
+}
+.logo-text{
+    padding-left: 2%;
+    position: relative;
+    bottom: 100;
+}
