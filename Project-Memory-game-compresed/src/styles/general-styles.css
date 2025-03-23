@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: white;
+}
+body,
+HTML {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 0 0 0 0;
+  margin: 0;
+  /* 
+  guiltygear-ps1-ky-stage.gif
+  Back_ggi_frasco.webp
+  ggxx-stage-paris2.gif
+  */
+  background-image: url(/background/guiltygear-ps1-ky-stage.gif);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}

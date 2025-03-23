@@ -1,0 +1,98 @@
+.game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Start pop-up */
+
+.startup-menu {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  height: 300px;
+  gap: 2rem;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 10px double black;
+  border-radius: 0.5rem;
+
+  background-color: darkred;
+
+  z-index: 99;
+}
+
+.upper-message {
+  font-size: 3em;
+}
+.rules-message {
+  font-size: 1.5em;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.button-container button {
+  font-size: 2em;
+  padding: 0 0.5em 0 0.5em;
+  background-color: transparent;
+  cursor: pointer;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.button-container button:hover {
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+.button-container button:nth-child(3) {
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.button-container span {
+  font-size: 2em;
+}
+
+/* Loser pop-up */
+
+.loser-popup-menu {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  min-height: 60%;
+  gap: 1.5rem;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 10px double black;
+  border-radius: 0.5rem;
+
+  background-color: darkred;
+
+  z-index: 99;
+}
+.loser-message {
+  font-size: 2em;
+}
+.loser-popup-menu img {
+  width: 150px;
+}
