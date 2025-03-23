@@ -1,0 +1,116 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.main p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Skills */
+
+.skills-section {
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: solid 10px rgba(255, 255, 255, 0.134);
+  margin-bottom: 4rem;
+}
+
+.tools-container {
+  gap: 5px;
+}
+.tools-container img {
+  width: 60px;
+}
+
+/* Projects */
+.projects-section {
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.projects-section .project:not(:nth-child(-n + 2)) {
+  border-top: 2px solid white;
+}
+
+.project {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.2rem;
+  gap: 30px;
+  /* background-color: rgba(0, 0, 0, 0.507); */
+  /* background-color: rgba(18, 46, 46, 0.689); */
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.proj-img-container {
+  /* width: 200px; */
+  border-radius: 1rem;
+  object-fit: contain;
+}
+.proj-img-container img {
+  width: 300px;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.project-details {
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 2rem;
+}
+.project-description {
+  font-size: 1.5rem;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* hobbies-section */
+
+.hobbies-section {
+  margin: 2rem;
+}
+
+/* Footer/ Contact Me */
+.footer {
+  margin: 3rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials-container {
+  gap: 1rem;
+}
+
+.socials-container a {
+  text-decoration: none;
+}
+.socials-container a i {
+  font-size: 3.5rem;
+  border-radius: 60%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.socials-container a i:hover {
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
